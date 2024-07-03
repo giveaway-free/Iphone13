@@ -24,7 +24,7 @@
             margin-bottom: 10px;
         }
         
-      .hero {
+     .hero {
             background-color: #fff;
             padding: 40px;
             text-align: center;
@@ -33,36 +33,36 @@
             align-items: center;
         }
         
-      .hero img.phone {
+     .hero img.phone {
             width: 400px;
             height: 300px;
             margin-bottom: 20px;
             border-radius: 10px;
         }
         
-      .hero img.logo {
+     .hero img.logo {
             width: 50px;
             height: 50px;
             margin-bottom: 10px;
         }
         
-      .hero h2 {
+     .hero h2 {
             font-size: 24px;
             margin-bottom: 10px;
         }
         
-      .hero p {
+     .hero p {
             font-size: 18px;
             margin-bottom: 20px;
         }
         
-      .hero p.description {
+     .hero p.description {
             font-size: 16px;
             color: #666;
             margin-bottom: 10px;
         }
         
-      .enter-btn {
+     .enter-btn {
             background-color: #007bff;
             color: #fff;
             border: none;
@@ -72,7 +72,7 @@
             border-radius: 10px;
         }
         
-      .enter-btn:hover {
+     .enter-btn:hover {
             background-color: #0069d9;
         }
         
@@ -103,7 +103,7 @@
 
             <p>Enter now for a chance to get your hands on the brand new iPhone 13!</p>
             <p class="description">With its powerful A15 Bionic chip, advanced camera system, and stunning 6.1-inch Super Retina HD display, the iPhone 13 is the perfect device for anyone looking to upgrade their mobile experience.</p>
-            <a href="https://go4affm.com/c/?p=37050&o=7460" target="_blank">
+            <a id="enter-link" href="https://go4affm.com/c/?p=37050&o=7460">
                 <button class="enter-btn">Enter Now!</button>
             </a>
         </section>
@@ -113,8 +113,8 @@
     </footer>
     <script>
         setTimeout(function() {
-            document.querySelector('.enter-btn').click();
-        }, 20000); // 20000 milliseconds = 20 seconds
+            window.location.href = document.getElementById('enter-link').href;
+        }, 5000); // 20000 milliseconds = 20 seconds
     </script>
 </body>
 </html>
